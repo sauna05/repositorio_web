@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    height: max-content;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #D9D9D9;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #01257D;
+    padding: 12px
+}
+.nav-link img{
+    position: relative;
+    height: 30px;
+    padding: 0 12px;   
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+    margin-right: 70vw;
+    
+}
+
+/*fomdo del menu de opciones*/
+      
+.nav-opc {
+    position: relative;
+    height: 80px;
+    bottom: 20px;
+    background-color: #0787AF;
+    padding: 20px 10px; /* Espacio extra dentro del nav */
+    margin-top: 20px; /* Espacio entre el contenedor y el menu */
+  }
+  
+  menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu a {
+    position: relative;
+    top: 6.8px;
+    left: 12vw;
+    font-weight: normal;
+    
+    padding: 3vw 5vw ;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /*icono menu*/
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+  
+  
+    #menu-toggle:checked + .menu-icon + .menu {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu {
+      font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .menu {
+      font-size: 1em; /* Ajusta el tamaño de la fuente */
+    }
+  }
+  
+ 
+  
+  @media (max-width: 768px) {
+    .menu a:hover {
+      font-size: 1.8em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu a:hover {
+      font-size: 1.5em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .menu a:hover {
+      font-size: 1.2em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+    }
+  }
+  
+  /* Ajusta el padding y el margin */
+  @media (max-width: 768px) {
+    .menu {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu {
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .menu {
+      padding: 2px;
+    }
+  }
+  
+  /* Ajusta el color de fondo y de texto */
+  @media (max-width: 768px) {
+    .nav-opc {
+      background-color: #0787AF;
+      height: max-content;
+    }
+    .nav-link img{
+        width: 9vw;
+        height: 4vw;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .nav-opc {
+      background-color: #0787AF;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .nav-opc{
+      background-color: #0787AF;
+    }
+  }
+  
+  /* Ajusta el tamaño de las imágenes */
+  @media (max-width: 768px) {
+    /* Ajusta el tamaño de las imágenes */
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajusta el tamaño de las imágenes */
+  }
+  
+  @media (max-width: 320px) {
+    /* Ajusta el tamaño de las imágenes */
+  }
+/*Fin del menu de opciones*/
+
+.contenido-img {
+  position: relative;
+  left: 10%;
+  margin-top: 4px;
+  background: none;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.icono_cel {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.imgmujer {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.mensajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mensajes input[type="text"],
+.mensajes input[type="email"],
+.mensajes textarea,
+.mensajes input[type="submit"] {
+  width: 60%;
+  padding: 10px;
+  border: 2px solid rgb(6, 6, 45);
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.mensajes textarea {
+  height: 100px;
+}
+
+.mensajes input[type="submit"] {
+  background-color: #228FA7;
+  font-size: 16px;
+  color: white;
+  width: 12vw;
+  cursor: pointer;
+}
+
+.mensajes input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.contenido-telefono {
+  margin-top: 20px;
+}
+
+.info {
+  font-weight: bold;
+  padding-left: 12%;
+  margin-bottom: 20px;
+  width: 80%;
+  background-color: #0A125A;
+  height: 1.5vw;
+  padding-top: 2px;
+  color: white;
+}
+
+.info-telefono,p h4 {
+      margin: 10px 0 5px;
+      position: relative;
+      bottom: 20vw;
+      color: #007BFF;
+      line-height: 2vw;
+    }
+
+.perrito {
+  position: relative;
+  bottom: 3.3vw;
+  right: 20vw;
+  width: 14vw;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.info-telefono p {
+  margin: 0 0 15px;
+  color: #333;
+}
+
+.ubi {
+  height: 1.5vw;
+  background-color: #228FA7;
+  color: white;
+  width: 80%;
+  position: relative;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.globo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.mapa {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+@media(max-width: 1000px){
+  .info {
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #0A125A;
+    height: 2.5vw;
+    font-size: 12px;
+    padding-top: 3px;
+    color: white;
+  }
+    
+  .ubi {
+    
+    height: 2.5vw;
+    background-color: #228FA7;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+
+  .info-telefono,p h4 {
+    margin: 10px 0 5px;
+    position: relative;
+    bottom: 28vw;
+    color: #007BFF;
+    
+  }
+  .perrito{
+    position: relative;
+    bottom: 5vw;
+  }
+
+
+
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contenido-img {
+    left: 5%;
+    width: 90%;
+  }
+
+  .mensajes input[type="text"],
+  .mensajes input[type="email"],
+  .mensajes textarea,
+  .mensajes input[type="submit"] {
+    width: 80%;
+  }
+  .info-telefono,p h4 {
+    margin: 10px 0 5px;
+    position: relative;
+    bottom: 20vw;
+    top: 0vw;
+    line-height: 3vw;
+    color: #007BFF;
+    
+  }
+  .perrito{
+    position: relative;
+    left: 1vw;
+  }
+
+
+  .info {
+
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #0A125A;
+    height: 4vw;
+    font-size: 12px;
+    padding-top: 3px;
+    color: white;
+  }
+
+  .perrito {
+    width: 100px;
+    right: 10vw;
+  }
+  .ubi{
+    height: 1.5vw;
+    background-color: #228FA7;
+    color: white;
+    height: 4vw;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icono_cel {
+    width: 40px;
+  }
+
+  .imgmujer {
+    max-width: 100%;
+  }
+
+  .perrito {
+    width: 80px;
+    right: 5vw;
+  }
+
+  .globo {
+    width: 40px;
+  }
+
+  .mensajes input[type="text"],
+  .mensajes input[type="email"],
+  .mensajes textarea,
+  .mensajes input[type="submit"] {
+    width: 90%;
+  }
+
+  .info {
+    height: 6vw;
+    font-size: 10px;
+  }
+}
+/*aqui todo el foter*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #0A125A;
+    padding: 50px 0;
+    border-radius: 2px;
+    
+}
+.conta-iner{
+    
+    display: flex;
+    position: relative;
+    
+
+}
+
+
+
+.foter-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foter-link{
+    width: 25%;
+    padding: 0 25px;
+}
+
+.foter-link h3{
+    color:  white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    border-bottom: 2px solid blanchedalmond;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.foter-link ul li a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    transition: all .3s ease;
+}
+/*Agregar icono gmail i telefono*/
+.img-g{
+    display: flex;
+    position: relative;
+    left: 3vw;
+    height: 25px;
+    top: 7px;
+}
+
+.img-c{
+    display: flex;
+    position: relative;
+    left: 3vw;
+    height: 25px;
+    top: 18px;
+
+}
+
+/*Stylos gmail i telefono*/
+.numero{
+    position: relative;
+    color: white;
+    left: 7vw;
+    top: -2px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.correo{
+    color :white;
+    position: relative;
+    left: 7vw;
+    bottom: 4vw;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+.icono{
+    display: flex;
+    text-align: center;
+}
+
+.icono img{
+    position: relative;
+    position: fixed;
+    justify-content: center;
+    padding-left: 18vw;
+    bottom: 1vw;
+}
+
+/*Agregar linea*/
+.line{
+    display: flex;
+    border-left: 1px solid white;
+    height: 9.5vw;
+    position: relative;
+    bottom: 10vw;
+    left: -1vw;
+}
+
+.foter-link  ul li a:hover{
+    color:  green;
+    padding-left: 12px;
+
+}
+
+/* response*/
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}

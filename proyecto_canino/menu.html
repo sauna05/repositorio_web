@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+          background-color: #426B1F;
+          padding: 20px 20px; /* Espacio extra dentro del nav */
+          margin-top: 20px; /* Espacio entre el contenedor y el menu */
+        }
+        
+        menu {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-around;
+        }
+        
+        .menu li {
+          padding: 10px 20px;
+        }
+        
+        .menu a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        
+        .menu-icon {
+          display: none;
+          font-size: 30px;
+          cursor: pointer;
+          padding: 10px 20px;
+        }
+        
+        #menu-toggle {
+          display: none;
+        }
+        
+        @media (max-width: 768px) {
+          .menu {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+          }
+        
+          .menu li {
+            text-align: center;
+            padding: 15px 0;
+            font-weight: bold;
+            font-size: 1.5em; /* Ajusta el tamaño de la fuente */
+          }
+        
+          #menu-toggle:checked + .menu-icon + .menu {
+            display: flex;
+          }
+        
+          .menu-icon {
+            display: block;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .menu {
+            font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+          }
+        }
+        
+        @media (max-width: 320px) {
+          .menu {
+            font-size: 1em; /* Ajusta el tamaño de la fuente */
+          }
+        }
+        
+        .menu a:hover {
+          color: #01305A; /* Cambia el color del texto al pasar el mouse */
+          transform: scale(2.5); /* Aumenta el tamaño del texto al pasar el mouse */
+        }
+        
+        @media (max-width: 768px) {
+          .menu a:hover {
+            font-size: 1.8em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .menu a:hover {
+            font-size: 1.5em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+          }
+        }
+        
+        @media (max-width: 320px) {
+          .menu a:hover {
+            font-size: 1.2em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+          }
+        }
+        
+        /* Ajusta el padding y el margin */
+        @media (max-width: 768px) {
+          .menu {
+            padding: 10px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .menu {
+            padding: 5px;
+          }
+        }
+        
+        @media (max-width: 320px) {
+          .menu {
+            padding: 2px;
+          }
+        }
+        
+        /* Ajusta el color de fondo y de texto */
+        @media (max-width: 768px) {
+          nav {
+            background-color: #426B1F;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          nav {
+            background-color: #426B1F;
+          }
+        }
+        
+        @media (max-width: 320px) {
+          nav {
+            background-color: #426B1F;
+          }
+        }
+        
+        /* Ajusta el tamaño de las imágenes */
+        @media (max-width: 768px) {
+          /* Ajusta el tamaño de las imágenes */
+        }
+        
+        @media (max-width: 480px) {
+          /* Ajusta el tamaño de las imágenes */
+        }
+        
+        @media (max-width: 320px) {
+          /* Ajusta el tamaño de las imágenes */
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+            <a href="#">Contacto</a>
+        </ul>
+    </nav>
+</body>
+</html>

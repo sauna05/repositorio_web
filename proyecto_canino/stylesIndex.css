@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    height: max-content;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #F1EEEE;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #01257D;
+    padding: 12px
+}
+
+      
+.nav-opc {
+    position: relative;
+    height: 80px;
+    bottom: 20px;
+    background-color: #0787AF;
+    padding: 20px 10px; /* Espacio extra dentro del nav */
+    margin-top: 20px; /* Espacio entre el contenedor y el menu */
+  }
+  
+  menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu a {
+    position: relative;
+    top: 6.8px;
+    left: 15vw;
+    padding: 3vw 5vw ;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /*icono menu*/
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+
+  
+  
+  
+    #menu-toggle:checked + .menu-icon + .menu {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu {
+      font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .menu {
+      font-size: 1em; /* Ajusta el tamaño de la fuente */
+    }
+    
+  }
+  
+ 
+  
+  @media (max-width: 768px) {
+    .menu a:hover {
+      font-size: 1.8em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu a:hover {
+      font-size: 1.5em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+    }
+   
+    
+  }
+  
+  @media (max-width: 320px) {
+    .menu a:hover {
+      font-size: 1.2em; /* Ajusta el tamaño de la fuente al pasar el mouse */
+    }
+  }
+  
+  /* Ajusta el padding y el margin */
+  @media (max-width: 768px) {
+    .menu {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu {
+      padding: 5px;
+    }
+    
+  }
+  
+  @media (max-width: 320px) {
+    .menu {
+      padding: 2px;
+    }
+  }
+  
+  /* Ajusta el color de fondo y de texto */
+  @media (max-width: 768px) {
+    .nav-opc {
+      background-color: #0787AF;
+      height: max-content;
+    }
+    
+   
+  }
+  
+  @media (max-width: 500px) {
+    .nav-opc {
+      background-color: #0787AF;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .nav-opc{
+      background-color: #0787AF;
+    }
+  }
+  
+  /* Ajusta el tamaño de las imágenes */
+  @media (max-width: 768px) {
+    /* Ajusta el tamaño de las imágenes */
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajusta el tamaño de las imágenes */
+  }
+  
+  @media (max-width: 320px) {
+    /* Ajusta el tamaño de las imágenes */
+  }
+/*Fin del menu de opciones*/
+
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 80px;
+  margin-right: 65vw;
+  
+}
+
+.slider {
+  max-height: max-content;   
+}
+
+
+.slider img{ 
+  position: relative;
+  left: 15vw;
+  bottom: 1.3vw;
+  justify-content:center ;
+  width: 70%;
+  height: 32vw;
+  transition: all 2s ease;
+  border-radius: 2px;
+  
+}
+
+.nav-link img{
+    position: relative;
+    height: 32px;
+    padding: 0 20px;   
+}
+
+@media (max-width: 768px) {
+  
+  .nav-link img{
+    position: relative;
+    height: 20px;
+    padding: 0 20px;   
+}
+ 
+}
+
+
+.contenedor-banner {
+  position: relative;
+  width: 70%;
+  background-color: #F1EEEE;
+  left: 15vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.conte-parrafos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.div-responsive {
+  flex: 1;
+
+  border-radius: 6px;
+  border: 3px solid gray;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;  /* Espacio alrededor */
+  width: 100%;  /* Ajusta el ancho para centrar */
+}
+
+.t-1, .t-2 {
+  position: relative;
+  margin: 0 12px 12px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(123, 113, 113);
+  text-align: center;  /* Centrar el texto */
+}
+
+.video {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.img-1 img {
+  width: 100%;
+ 
+}
+.img-2 img{
+  position: relative;
+  margin-top: 12px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .conte-parrafos {
+      flex-direction: row;
+      justify-content: center;  /* Centra los divs en línea */
+  }
+  .img-1 img{
+     width: 100%;
+     
+  }
+  
+ 
+  
+  .div-responsive {
+      width: 40%;  /* Ajusta el ancho para columnas */
+  }
+}
+
+
+/*aqui el foter*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #01257D;
+    padding: 50px 0;
+    border-radius: 2px;
+    
+}
+.foter-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foter-link{
+    width: 25%;
+    padding: 0 25px;
+}
+
+.foter-link h3{
+    color:  white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    border-bottom: 2px solid blanchedalmond;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.foter-link ul li a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    transition: all .3s ease;
+}
+/*Agregar icono gmail i telefono*/
+.img-g{
+    display: flex;
+    position: relative;
+    left: 3vw;
+    height: 25px;
+    top: 7px;
+}
+
+.img-c{
+    display: flex;
+    position: relative;
+    left: 3vw;
+    height: 25px;
+    top: 18px;
+
+}
+
+/*Stylos gmail i telefono*/
+.numero{
+    position: relative;
+    color: white;
+    left: 7vw;
+    top: -2px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.correo{
+    color :white;
+    position: relative;
+    left: 7vw;
+    bottom: 4vw;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+.icono{
+    display: flex;
+    text-align: center;
+}
+
+.icono img{
+    
+    position: relative;
+    position: fixed;
+    justify-content: center;
+    padding-left: 18vw;
+    bottom: 1vw;
+}
+
+/*Agregar linea*/
+.line{
+    display: flex;
+    border-left: 1px solid white;
+    height: 9.5vw;
+    position: relative;
+    bottom: 10vw;
+    left: -1vw;
+}
+
+.foter-link  ul li a:hover{
+    color:  green;
+    padding-left: 12px;
+
+}
+
+/* response*/
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
